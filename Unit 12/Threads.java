@@ -14,25 +14,23 @@ public class Threads{
    }
 }
 
+
 class One extends Thread{
-   
-   public void run(){
-      for(int i = 0; i < 6; i ++){
-         System.out.println("One");
-         try{Thread.sleep(500);}
-         catch(Exception e){}
-      
-      }
-   }
+    
+    public void run(){
+      for(int i =0; i < 6; i++){
+            System.out.println("One");
+            try{Thread.sleep(500);}catch(Exception e){}
+         }
+         
+    }
 }
 
-class Two extends Thread{
-   
-   public void run(){
-      for(int i = 0; i < 6; i ++){
-         System.out.println("Two");
-         try{Thread.sleep(500);}
-         catch(Exception e){}
-      }
-   }
+class Two extends Thread{  
+    public void run(){
+      for(int i =0; i < 6; i++){
+            System.out.println("Two");
+            try{Thread.sleep(500);}catch (Exception e){}
+         }
+    }
 }

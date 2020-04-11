@@ -11,7 +11,7 @@ public class RunnableInterface{
       Thread t2 = new Thread(two);
       
       t1.start();
-      try{Thread.sleep(10);}catch(Exception e){}
+      try{Thread.sleep(10);}catch (Exception e){}
       t2.start();
       
    }

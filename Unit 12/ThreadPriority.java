@@ -9,10 +9,13 @@ public class ThreadPriority{
       
       Thread t1 = new Thread(one, "One Thread");
       Thread t2 = new Thread(two);
+      
+      //Naming
       t2.setName("Two Thread");
       System.out.println(t1.getName());
       System.out.println(t2.getName());
       
+      //Priority
       System.out.println(t1.getPriority());
       System.out.println(t2.getPriority());
       t1.setPriority(Thread.MAX_PRIORITY);
